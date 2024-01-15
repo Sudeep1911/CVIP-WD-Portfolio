@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // assets/js/script.js
+
+        $(document).ready(function() {
+            $(window).on('scroll', function() {
+                var skillsElement = $('#skills');
+                var windowHeight = $(window).height();
+                var scrollPos = $(window).scrollTop();
+                var skillsTop = skillsElement.offset().top;
+
+                if (scrollPos > skillsTop - windowHeight && !skillsElement.hasClass('animated')) {
+                    skillsElement.addClass('animated');
+
+                    $('.progress-bar').each(function() {
+                        var progressValue = $(this).attr('data-transitiongoal');
+                        $(this).animate({ width: progressValue + '%' }, 1000);
+                    });
+                }
+            });
+        });
+        
+    </script>
+    <style>
+        .row{
+            margin-left: 7px;
+        }
+        .view{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width:100%;
+        }
+        .view button{
+            border: 0px;
+            background-color: rgb(57, 77, 255);
+            color: white;
+            width:150px;
+            height:50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Preloader -->
+    
+    <!-- header -->
+    <header class="navbar-fixed-top">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ./header -->
+    
+    <!-- home -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5">
+        <div class="container" id="home-container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <h3>Hello</h3>
+                    <h1>I am Sudeep K</h1> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./home -->
+    
+    <!-- about -->
+    <div class="section" id="about">
+        <div class="container">
+            <div class="col-md-6" data-aos="fade-up">
+                <h4>01</h4>
+                <h1 class="size-50">Know <br /> About me</h1>
+                <div class="h-50"></div>
+                <p>As a current M.Sc. student specializing in Decision and Computing Sciences at Coimbatore Institute of Technology, my academic journey has honed my skills in data analysis, problem-solving, and computational thinking.</p>
+                <p> I am passionate about transforming ideas into scalable and user-friendly solutions. I am open to collaborations, seeking opportunities to engage with like-minded professionals in the software and web development, as well as data analysis fields. Let's connect and explore the exciting possibilities in technology together!.</p>
+
+            </div>
+            <div class="col-md-6 about-img-div">
+
+                <img src="img/Sudeep.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+    
+    <div class="section" id="education">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>02</h4>
+                <h1 class="size-50">My <br /> Education</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2021 - Present</p>
+                            <h3>Coimbatore Institute of Technology</h3>
+                            <h4>Coimbatore</h4>
+                            <p><strong>M.Sc Decision and Computing Sciences</strong>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">2016 - 2021</p>
+                            <h3>Velalar Vidyalayaa CBSE School</h3>
+                            <h4>Thindal, Erode</h4>
+                            <p><strong>Secondary and Higher Education</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>03</h4>
+                <h1 class="size-50">My <br /> Experience</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-12">
+                <ul class="timeline">
+                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">15th December 2023 - 15th January 2024</p>
+                            <h3>Web Developer</h3>
+                            <h4>Coderscave</h4>
+                            <p>Web Developer at Coderscave, adept in crafting engaging web solutions and contributing to diverse projects for enhanced user experiences.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-event" data-aos="fade-up">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">15th December 2023 - 31th December 2023</p>
+                            <h3>Data Analyst</h3>
+                            <h4>Meriskill</h4>
+                            <p>Data Analyst at Meriskill, excelling in Sales Data Analysis and HR Analytics, leveraging data manipulation, visualization, and predictive modeling for strategic decision-making</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+    
+    <div class="section" id="skills">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>04</h4>
+                <h1 class="size-50">My <br/> Skills</h1>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>Html/css</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>Python</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="75"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>Javascript</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="40"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>C</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+                <div class="col-md-4">
+                    <div class="skill">
+                        <h4>SQL</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                    <div class="skill">
+                        <h4>Java</h4>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
+                        </div><!-- /.progress -->
+                    </div><!-- /.skill -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>05</h4>
+                <h1 class="size-50">My <br /> Projects</h1> 
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <div class="categories-grid wow fadeInLeft">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <li><a href="" class="active" data-filter="*">All</a></li>
+                                    <li><a href="" data-filter=".software">Software Development</a></li>
+                                    <li><a href="" data-filter=".website">Web Development</a></li>
+                                    <li><a href="" data-filter=".Dashboard">Data Visualization</a></li>
+                                    <li><a href="" data-filter=".ml">Machine Learning</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- portfolio_filter -->
+                        
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 ml">
+                                <a id="demo01" href="#arrythmia" class="portfolio_item"> <img src="img/portfolio/arrhythmia.jpg" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Classification of Arrhythmia</span> <em>Machine Learning</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <a id="demo02" href="#netflix" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-22 222546.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Netflix Clone</span> <em>Website</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 software">
+                                <a id="demo03" href="#lae" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-24 002325.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Loan Assistance and Eligibility</span> <em>Software</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 ml Dashboard">
+                                <a id="demo04" href="#hma" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-14 201101.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>HR Metrics and Analysis</span> <em>Machine Learning / Dashboard</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 Dashboard">
+                                <a id="demo05" href="#hrdashboard" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-19 233532.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Hr Attrition Dashboard</span> <em>Dashboard</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 software">
+                                <a id="demo06" href="#transportprblm" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-24 000340.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Transportation Problem</span> <em>Software</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 ml Dashboard software">
+                                <a id="demo07" href="#hrattrition" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-23 231022.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>HR Attrition Prediction Model</span> <em>Machine Learning / Dashboard / Software</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 Dashboard">
+                                <a id="demo08" href="#salesdashboard" class="portfolio_item"> <img src="img/portfolio/Screenshot 2023-12-16 194145.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Sales Dashboard 2019</span> <em>Dashboard</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <a id="demo09" href="#std" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-24 004806.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>Sweet Tooth Dentist</span> <em>Website</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            
+                            <!-- single work -->
+                            <div class="col-md-4 col-sm-6 website">
+                                <a id="demo10" href="#skm" class="portfolio_item"> <img src="img\portfolio\Screenshot 2023-12-23 232617.png" alt="image" class="img-responsive" />
+                                    <div class="portfolio_item_hover">
+                                        <div class="portfolio-border clearfix">
+                                            <div class="item_info"> <span>SK Movie Production House</span> <em>Website</em> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end single work -->
+                            <div class="view">
+                                <button onclick="window.location.href='https://github.com/Sudeep1911?tab=repositories'">View all Projects</button>
+                            </div>
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+
+            <!-- end main container -->
+        </div>
+    </div>
+    <!-- ./projects -->
+    
+    <!-- contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>06</h4>
+                <h1 class="size-50">Contact  Me</h1>
+                <div class="h-50"></div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+
+                <h3> Mobile Number</h3>
+                <p>+91 7598323217</p>
+                <h3>Email</h3>
+                <p>sudeepkarthigeyan20@gmail.com</p>
+
+                <h3>Social Network</h3>
+
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/kuttinna.sudeep"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sudeep-karthigeyan/"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/sk_tamilan_1911/"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="https://github.com/Sudeep1911"><i class="ion-social-github"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ./contact -->
+
+    <!--DEMO01-->
+
+    <div id="arrythmia" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-arrythmia close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Classification of<br /> Arrythmia</h2>
+                        <div class="h-50"></div>
+                        <p>In this healthcare machine learning initiative, the focus is on the vital task of arrhythmia classification. Comprehensive patient data, including ECG readings, medical history, and demographics, has been meticulously collected. Rigorous preprocessing, encompassing data cleaning and feature engineering, has prepared the dataset for advanced model training.</p>
+                        <img src="img/portfolio/arrhythmia.jpg" alt="" class="img-responsive" />
+                        <p>A diverse array of machine learning techniques, such as Logistic Regression, K-Nearest Neighbors, Support Vector Machines, Random Forest, Decision Tree, and Artificial Neural Networks, has been employed to identify the most effective solution for arrhythmia classification.</p>
+                        <br />
+                        <p>Insights from machine learning models uncovered the strengths and considerations of each technique. Logistic Regression demonstrated high recall on both training (93.9%) and test (70.3%) sets. The comparative analysis underscored the need for further fine-tuning and analysis to enhance model performance and generalizability.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2024-01-05 232816.png" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p>In conclusion, this project marks a substantial stride in leveraging data-driven approaches for improved diagnostics and patient care in healthcare. The success of the project highlights the potential of machine learning in contributing to more effective medical interventions.</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Classification-of-Arrhythmia'">View Project</button>
+                        </div>
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="netflix" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-netflix close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Netflix<br /> Clone</h2>
+                        <div class="h-50"></div>
+                        <p>Developed as part of a project assignment by CodersCave, this Netflix clone replicates key features and design elements of the popular streaming platform. The project's aim is to provide users with a familiar experience, allowing them to explore a curated collection of movies, TV shows, and trailers.</p>
+                        <img src="img\portfolio\Screenshot 2023-12-22 222546.png" alt="" class="img-responsive" />
+                        <br />
+                        <h3>Key Features:</h3>
+                        <p><b>Movie Showcase:</b> Browse through hot movies, new releases, and watch trailers.</p>
+                        <p><b>Responsive Design:</b> Enjoy a seamless experience on desktops, tablets, and smartphones.</p>
+                        <p><b>FAQ Section:</b> Find answers to common queries.</p>
+                        <p><b>Language Selection:</b> Personalize your experience with options like English, Hindi, and Tamil.</p>
+                        <p><b>Account Sign-In:</b> Access premium content and personalized recommendations by signing in.</p>
+                        <img src="img\portfolio\Screenshot 2024-01-05 235414.png" alt="" class="img-responsive" />
+                        <br />
+                        <img src="img\portfolio\Screenshot 2024-01-05 235616.png" alt="" class="img-responsive" />
+                        <br />
+                        <p>In wrapping up this Netflix clone project, it's been an exhilarating journey replicating the essence of a streaming giant. The endeavor aimed to deliver a user-friendly platform with key features akin to the original.</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://netflix-clone-app20.netlify.app/'">View Website</button>
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/CVIP-WD-Netflix-clone'">View Project</button>
+                        </div>
+                        <br /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lae" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-lae close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Loan Assistance<br /> And Eligibility</h2>
+                        <div class="h-50"></div>
+                        <p>This loan assistance app is designed for a bank to simplify the loan application process and enhance customer experience. Developed using Python's Tkinter framework, the app offers a user-friendly interface, secure login, and features like savings calculation and loan application.</p>
+                        <div class="centering">
+                            <img class="view" src="img\portfolio\Screenshot 2023-12-24 002325.png" alt="" class="img-responsive" style="width:350px;"/>
+                        </div>
+                        <br />
+                        <h3>Key Features:</h3>
+                        <p><b>User-friendly Interface:</b> Provides a seamless experience for customers to calculate savings and apply for loans.</p>
+                        <p><b>Secure Login:</b> Ensures the privacy and security of customer data with a robust login system.</p>
+                        <p><b>Loan Types:</b> Offers various loan options, each with specific eligibility criteria and interest rates.</p>
+                        <p><b>Savings Calculation:</b> Allows customers to calculate savings by inputting financial details.</p>
+                        <p><b>Eligibility Checking:</b> Allows customers to check whether they are eligible to get the loan.</p>
+                        <br /> <img src="img\portfolio\loanui1.jpg" alt="" class="img-responsive" />
+                        <br />
+                        <p>
+                            <h3>Tools Used:</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Tkinter</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </p>
+                        <br />
+                        <p>The loan assistance app provides an efficient solution for customers to apply for loans, reducing paperwork and enhancing overall banking services.</p>
+                        <br /> 
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Loan-Application'">View Project</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hma" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-hma close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>HR Metrics<br /> and Analysis</h2>
+                        <div class="h-50"></div>
+                        <p>This project aims to outline key findings and present a strategy map for SK Movie Production House based on the given case study. We focus on various aspects, including creative collaboration, data security, project management, inclusivity in storytelling, talent development, and audience engagement.</p>
+                        
+                        <p><h3>Findings and Strategy Map</h3>
+                            Explore our findings, including fostering creative collaboration, ensuring data security, efficient project management, promoting inclusivity, investing in talent development, talent retention, succession planning, effective storytelling, and monitoring audience engagement.</p>
+                        <br />
+                        <img src="img\portfolio\Screenshot 2024-01-06 215752.png" alt="" class="img-responsive" />
+                        <p><h3>Project Objectives</h3>
+                            <ul><li>Identify areas for improvement within SK Movie Production House.</li>
+                            <li>Suggest HR initiatives for enhancing culture, talent management, motivation, retention, recruitment, performance management, learning and development, and diversity.</li>
+                            <li>Provide operational and predictive analytics for informed decision-making.</li></ul>
+                        </p>
+                        <br />
+                        <p><h3>Scope of the Project</h3>
+                            <ul><li>Findings and SK Movie Production House strategy map</li>
+                            <li>High-level guidelines for HR improvements and initiatives</li>
+                            <li>Operational and predictive analytics</li></ul></p><br>
+
+                        <p><h3>Python Analysis</h3>Python analyses offer comprehensive insights into different aspects of HR, providing a holistic view of culture, competency, costs, recruitment, learning, performance, and talent management within SK Movie Production House. The visualizations enhance interpretability and facilitate data-driven decision-making.</p>
+                        <br><img src="img\portfolio\Screenshot 2024-01-06 214004.png" alt="" class="img-responsive" /><br>
+                        <p><h3>Power BI dashboard</h3>
+                            The Power BI dashboard provides a visual representation of key metrics. It includes measures such:
+                            <ul>
+                            <li>Culture</li>
+                            <li>Talent Management</li>
+                            <li>Motivation of Talent</li>
+                            <li>Retention of Employees</li>
+                            <li>Recruitment</li>
+                            <li>Performance Management</li>
+                            <li>Learning and Development</li>
+                            <li>Diversity</li></ul></p>
+                        <br />
+                        <img src="img\portfolio\Screenshot 2023-12-14 201101.png" alt="" class="img-responsive" />
+                        <br>
+                        <p><h3>Conclusion</h3>The analysis of SK Movie Production House reveals key areas for improvement and strategic initiatives. Focused on fostering creative collaboration, ensuring data security, optimizing project management, promoting inclusivity, investing in talent development, and monitoring audience engagement, the findings provide a roadmap for elevating organizational effectiveness. The Power BI dashboard offers valuable visual insights into critical HR categories, facilitating informed decision-making. By implementing these recommendations, SK Movie Production House is poised to enhance its operational efficiency, talent management, and overall competitiveness in the dynamic entertainment industry.</p>
+                        <br>
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Hr-Metrics-and-Analysis'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hrdashboard" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-hrdashboard close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Hr Attrition<br /> Dashboard</h2>
+                        <div class="h-50"></div>
+                        <p>This project, developed during a Data Analyst internship at MeriSKILL, focuses on creating a comprehensive HR Attrition Dashboard using Power BI. The aim is to gain insights into employee attrition, facilitating proactive human resource strategies based on diverse employee attributes.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-19 233421.png" alt="" class="img-responsive" />
+                        <br /><p><h3>Tool Used:</h3>
+                            Power BI (Business Intelligence): Microsoft's analytics tool for creating interactive reports and dashboards.</p><br />
+                        <h3>Dashboard Components:</h3>
+                        <p><b>Demographics:</b>
+                            Summarizes employee statistics, including age groups, gender, distance from home, and marital status.
+                            Provides insights into workforce diversity and commuting patterns for informed decision-making.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-19 233532.png" alt="" class="img-responsive" />
+                        <br />
+                        <p><b>Turnover Analysis I:</b>
+                            Offers insights into employee attrition, breaking down departures by department, affected job roles, business travel impact, and total years in the current role.
+                            Aids in workforce management and retention strategies.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-19 233622.png" alt="" class="img-responsive" />
+                        <br />
+                        <p><b>Turnover Analysis II:</b>
+                            Consolidates employee data, highlighting attrition by job level, overtime, performance ratings, monthly income, and attrition increase levels.
+                            Provides critical insights for crafting effective HR strategies and decision-making.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-19 233705.png" alt="" class="img-responsive" />
+                        <br />
+                        <p><b>Employee Wellbeing:</b>
+                            Further analysis of attrition data, emphasizing factors like job level, overtime, performance ratings, monthly income, and attrition increase levels.
+                            Offers valuable insights for shaping HR strategies that enhance employee wellbeing.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-19 233749.png" alt="" class="img-responsive" />
+                        <br />
+                        
+                        <p>This project showcases the ability to leverage data analytics for understanding and mitigating employee attrition. The provided dashboards serve as a valuable resource for HR professionals to make data-driven decisions and implement strategies that positively impact workforce retention and satisfaction.</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Meriskill-Hr-Dashboard'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="transportprblm" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-transportprblm close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Transportation<br /> Problem</h2>
+                        <div class="h-50"></div>
+                        <p>Transportation Problem in operational research with efficiency and precision. By implementing cutting-edge algorithms and user-friendly interfaces, we've developed a tool that optimizes the allocation of resources and minimizes transportation costs. Simplify your supply chain management and boost your operational efficiency with our solution.</p>
+                        <h3>Three Types of Approaches are done:</h3>
+                        <p><ul>
+                            <li>Least Cell Method</li>
+                            <li>North-west Method</li>
+                            <li>VAM method</li></ul></p>
+                        <h3>Tools Used:</h3>
+                        <p>
+                            <b>Python:</b> We leveraged the power of Python for its versatility, extensive libraries, and ease of implementation.</p>
+                            
+                            <p><b>Tkinter:</b> Tkinter was utilized for creating a user-friendly graphical interface to input data and visualize results.</p>
+                        <br />
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-24 000340.png" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+
+                        <p>Transportation Problem: This classic operational research problem involves optimizing the distribution of goods from multiple suppliers to multiple consumers while minimizing transportation costs. Our project effectively addresses and solves this logistical challenge.</p><br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Transportation-problem/tree/main'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="salesdashboard" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-salesdashboard close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Sales<br /> Dashboard</h2>
+                        <div class="h-50"></div>
+                        <p>This dashboard is created with integration of slicers this dashboard will give clear insights about the sales and will help the organization to improve the area of lacking.</p>
+                        <h3>Major Kpi's</h3>
+                        <p><ul>
+                            <li>Profit %</li>
+                            
+                            <li>Revenue Generated</li>
+                            
+                            <li>Quantity Sold</li>
+                            
+                            <li>Also Analyzed:</li>
+                            
+                            <li>Sales by top cities</li>
+                            
+                            <li>Orders of each product</li>
+                            
+                            <li>Sales over the year</li>
+                            
+                            <li>Price and sales of each product</li></ul></p>
+                        <br />
+                        <br /> <img src="img/portfolio/Screenshot 2023-12-16 194145.png" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p><h3>Charts Used:</h3></p>
+                        <ul>
+                            <li>Line and stacked column chart</li>
+
+                            <li>Map</li>
+                                
+                            <li>Treemap</li>
+                                
+                            <li>Doughnut chart</li>
+                                
+                            <li>Pie chart</li>
+                                
+                            <li>Stacked column chart</li>
+                        </ul>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Meriskill-Sales-dashboard'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hrattrition" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-hrattrition close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>HR Attrition<br /> Predictor</h2>
+                        <div class="h-50"></div>
+                        <p>This study uses machine learning to predict and understand employee attrition, aiming to provide actionable insights for proactive human resource strategies based on diverse employee attributes.</p>
+                        <p>This project focuses on addressing the challenge of employee attrition within organizations through a comprehensive analysis using machine learning techniques. The study employs Logistic Regression, Random Forest, Support Vector Machines (SVM), and Decision Trees to forecast and understand instances of employee turnover. Leveraging historical data encompassing a wide range of employee attributes, from demographics to nuanced factors like job role satisfaction, the project aims to construct accurate predictive models while unraveling the complex interplay of influential factors contributing to workforce turnover.</p>
+                        <br />
+                        <br /> <img src="img\portfolio\Screenshot 2023-12-23 231022.png" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <h3>Key Components:</h3>
+                        <p><b>Exploratory Data Analysis (EDA):</b> In-depth analysis of the IBM HR Analytics Employee Attrition & Performance dataset using Python, aiming to uncover insights into the factors influencing employee attrition within the organization.</p>
+                            <p><b>Machine Learning Models:</b> Implementation and evaluation of Logistic Regression, Random Forest, SVM, and Decision Trees to predict employee attrition. Each model's performance is assessed using metrics such as accuracy, precision, recall, and F1-score.</p>
+                            <p><b>Dashboard:</b> Visualization of the analysis results through Power BI, providing interactive reports and insights to facilitate decision-making for HR professionals.</p>
+                        <br />
+                        <br /> <img src="img\portfolio\WhatsApp Image 2023-11-20 at 21.20.58_6735f7db.jpg" alt="" class="img-responsive" /><br />
+                        <h3>Findings and Recomendations</h3>
+                        <p><ul><li>Identification of top factors contributing to attrition, including Monthly Income, Age, and Over Time.</li>
+                            <li>Comparison of machine learning model performances, with insights into strengths and limitations of each approach.</li>
+                            <li>Recommendations for proactive human resource management strategies based on the analysis, such as age-specific approaches, compensation reviews, and addressing overtime concerns.</li></ul></p>
+                        <br />
+                        <img src="img\portfolio\Screenshot 2024-01-07 011527.png" alt="" class="img-responsive" /><br />
+                        <h3>Model Comparison</h3>
+                        <ul>
+                            <li><b>Logistic Regression:</b> Achieved an accuracy of 86.73%, exhibiting moderate precision and recall. Struggled to predict positive instances accurately.</li>
+
+                            <li><b>Random Forest:</b> Outperformed with an accuracy of 87.75%, displaying higher precision and recall. Identified most instances correctly but misclassified some positive cases.</li>
+                                
+                            <li><b>Support Vector Machine (SVM):</b> Mirrored Logistic Regression's metrics, achieving 86.73% accuracy. Similar challenges in predicting positive instances.</li>
+                                
+                            <li><b>Decision Tree:</b> Accuracy of 86.05%, with a moderate balance between precision and recall. Effective overall correctness but room for improvement in predicting positive cases.</li>
+                        </ul>
+                        <img src="img\portfolio\WhatsApp Image 2023-12-06 at 10.09.55_08bb1fd0.jpg" alt="" class="img-responsive" /><br />
+                        <h3>Conclussion</h3>
+                        <p>The project concludes with actionable insights and recommendations aimed at helping organizations mitigate employee attrition and foster a stable, engaged, and retention-focused work environment.</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Hr-attrition-analysis'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="std" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-std close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Sweet Tooth Dentist<br /> Website</h2>
+                        <div class="h-50"></div>
+                        <p>The Sweet Tooth Dentist website is a cutting-edge platform that showcases a blend of expertise and compassion in dental care. Boasting a visually appealing and responsive design, the site offers a comprehensive overview of the dental practice's services, featuring an experienced team of doctors specializing in various fields.</p>
+                        <br /> <img src="img\portfolio\Screenshot 2024-01-15 152644.png" alt="" class="img-responsive" />
+                        <br />
+                        <p>Visitors can explore testimonials from satisfied patients and enjoy interactive elements like a popup overlay.</p>
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img src="img\portfolio\Screenshot 2024-01-15 152730.png" alt="" class="img-responsive" />
+                        </div>
+                        
+                        <br />
+                        <p>With a focus on user-friendly navigation, the website serves as an informative hub for anyone seeking high-quality dental services, embodying a commitment to excellence and patient well-being.</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://sweettoothdentist.neocities.org/'">View Website</button>
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Dental-Clinic-Website'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skm" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-skm close-popup-modal"> <i class="ion-close-round"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>SK Movie Production House<br /> Website</h2>
+                        <div class="h-50"></div>
+                        <p>SK Movie House's website is a meticulously crafted digital space designed to provide enthusiasts with a premier cinematic experience. Developed using Visual Studio Code and HTML, the site features dedicated pages for Movies, TV Shows, Animations, Games, and Collections.</p>
+                        <p>With a user-friendly interface, the website offers a seamless journey for visitors seeking diverse and creative content. The use of Google.com and Neocities.org tools ensures a smooth and efficient development process.</p>
+                        <br />
+                        <br /> <img src="img\portfolio\Screenshot 2024-01-15 144217.png" alt="" class="img-responsive" />
+                        <br /> <img src="img\portfolio\Screenshot 2024-01-15 144523.png" alt="" class="img-responsive" />
+                        <br />
+                        <p>From an enticing promotional banner created with Canva to the implementation of lead generation tactics, this website represents a dynamic blend of technology and creativity.</p>
+                        <p>It aims to captivate its audience, offering not only an array of entertainment options but also an immersive online platform that reflects SK Movie House's commitment to excellence in filmmaking</p>
+                        <br />
+                        <div class="view">
+                            <button onclick="window.location.href='https://skmoviehouse.neocities.org/'">View Website</button>
+                            <button onclick="window.location.href='https://github.com/Sudeep1911/Website-movie-production-house'">View Project</button>
+                        </div>
+                        <br />
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
